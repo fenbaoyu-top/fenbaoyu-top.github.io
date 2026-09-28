@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>粉鲍鱼 | 野生粉鲍鱼直供 · 干鲍 · 鲜鲍 · 鲍鱼礼盒</title>
+<meta name="description" content="粉鲍鱼专注高品质鲍鱼直供，涵盖野生粉鲍鱼、干鲍、鲜鲍、鲍鱼礼盒。产地直采、冷链配送，为您提供真正懂鲍鱼的选购指南。">
+<meta name="keywords" content="鲍鱼,粉鲍鱼,野生鲍鱼,干鲍,鲜鲍,鲍鱼礼盒,鲍鱼选购,鲍鱼做法,鲍鱼产地">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="粉鲍鱼 | 野生粉鲍鱼直供 · 干鲍 · 鲜鲍 · 鲍鱼礼盒">
+<meta property="og:description" content="产地直采的高品质鲍鱼，从干鲍到鲜鲍，懂鲍鱼，更懂你的餐桌。">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://fenbaoyu-top.github.io/">
+
+<style>
+/* ============ 基础重置 ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1a2332;
+  --ink-soft:#4a5568;
+  --abalone:#2a4a5a;
+  --abalone-deep:#16323f;
+  --gold:#c8a24a;
+  --gold-soft:#f3e6c4;
+  --cream:#faf7f0;
+  --white:#fff;
+  --line:#e3ddcf;
+  --shadow:0 8px 30px rgba(26,35,50,.08);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  color:var(--ink);line-height:1.75;background:var(--cream);
+  font-size:16px;
+}
+img{max-width:100%;display:block}
+a{color:var(--abalone);text-decoration:none}
+ul{list-style:none}
+
+/* ============ 版心 ============ */
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:70px 0}
+section+section{border-top:1px solid var(--line)}
+
+/* ============ 顶部导航 ============ */
+.hd{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;
+  height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;
+  font-size:20px;color:var(--abalone-deep);letter-spacing:.5px}
+.logo span{color:var(--gold)}
+.menu{display:flex;gap:28px}
+.menu a{font-size:15px;color:var(--ink-soft);font-weight:500;transition:.2s;
+  position:relative;padding:4px 0}
+.menu a:hover{color:var(--abalone)}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;
+  background:var(--gold);transition:.2s}
+.menu a:hover::after{width:100%}
+.cta{background:var(--abalone);color:var(--white)!important;padding:9px 20px!important;
+  border-radius:999px;font-size:14px!important}
+.cta::after{display:none}
+.cta:hover{background:var(--abalone-deep)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.burger i{width:24px;height:2px;background:var(--abalone-deep);display:block;border-radius:2px}
+
+/* ============ Hero ============ */
+.hero{background:linear-gradient(135deg,var(--abalone-deep) 0%,var(--abalone) 60%,#3a6476 100%);
+  color:var(--white);padding:100px 0 90px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 85% 20%,rgba(200,162,74,.25),transparent 45%),
+  radial-gradient(circle at 10% 90%,rgba(255,255,255,.06),transparent 40%)}
+.hero .wrap{position:relative}
+.h-eyebrow{display:inline-block;font-size:13px;letter-spacing:3px;color:var(--gold-soft);
+  border:1px solid rgba(243,230,196,.4);padding:5px 16px;border-radius:999px;margin-bottom:22px}
+.h-title{font-size:46px;line-height:1.2;font-weight:800;margin-bottom:20px}
+.h-title em{font-style:normal;color:var(--gold)}
+.h-sub{font-size:17px;color:rgba(255,255,255,.85);max-width:560px;margin-bottom:34px}
+.h-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:999px;
+  font-size:15px;font-weight:600;transition:.25s;border:2px solid transparent}
+.btn-gold{background:var(--gold);color:#2a2010}
+.btn-gold:hover{background:#d8b35c;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.5)}
+.btn-ghost:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
+.h-stats{display:flex;gap:44px;margin-top:56px;flex-wrap:wrap}
+.h-stat b{display:block;font-size:34px;color:var(--gold);font-weight:800}
+.h-stat small{font-size:13px;color:rgba(255,255,255,.7);letter-spacing:1px}
+
+/* ============ 区块标题 ============ */
+.sec-h{text-align:center;margin-bottom:48px}
+.sec-h .tag{font-size:13px;letter-spacing:4px;color:var(--gold);font-weight:700}
+.sec-h h2{font-size:34px;margin-top:8px;color:var(--abalone-deep);line-height:1.3}
+.sec-h p{color:var(--ink-soft);margin-top:12px;max-width:620px;margin-left:auto;margin-right:auto}
+
+/* ============ 产品卡片 ============ */
+.grid{display:grid;gap:26px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--white);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);
+  transition:.3s;border:1px solid transparent}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 45px rgba(26,35,50,.14);
+  border-color:var(--gold-soft)}
+.thumb{height:210px;display:flex;align-items:center;justify-content:center;
+  font-size:70px;position:relative}
+.thumb::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.06))}
+.t-1{background:linear-gradient(135deg,#dce8ec,#b9d0d8)}
+.t-2{background:linear-gradient(135deg,#f3e6c4,#e6cd94)}
+.t-3{background:linear-gradient(135deg,#e8eee6,#c9dcc6)}
+.t-4{background:linear-gradient(135deg,#e7dfd2,#cdc0ab)}
+.t-5{background:linear-gradient(135deg,#dde6ec,#bccdd8)}
+.t-6{background:linear-gradient(135deg,#f0e0e0,#e0c3c3)}
+.card-body{padding:22px}
+.card-body h3{font-size:19px;color:var(--abalone-deep);margin-bottom:8px}
+.card-body p{font-size:14px;color:var(--ink-soft);margin-bottom:14px}
+.card-foot{display:flex;justify-content:space-between;align-items:center;padding-top:14px;
+  border-top:1px dashed var(--line)}
+.price{font-size:13px;color:var(--ink-soft)}
+.price b{display:block;font-size:20px;color:var(--abalone);font-weight:800}
+.more{font-size:14px;color:var(--gold);font-weight:600}
+.more:hover{color:var(--abalone)}
+
+/* ============ 特点 ============ */
+.features{background:var(--white)}
+.feat{text-align:center;padding:34px 24px;background:var(--cream);
+  border-radius:14px;border:1px solid var(--line)}
+.feat .ic{font-size:44px;margin-bottom:16px;display:block}
+.feat h3{font-size:19px;color:var(--abalone-deep);margin-bottom:10px}
+.feat p{font-size:14px;color:var(--ink-soft)}
+
+/* ============ 关于 ============ */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-txt h2{font-size:32px;color:var(--abalone-deep);line-height:1.35;margin-bottom:20px}
+.about-txt p{color:var(--ink-soft);margin-bottom:16px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.kv div{padding:18px;background:var(--cream);border-radius:12px;border-left:4px solid var(--gold)}
+.kv b{display:block;font-size:24px;color:var(--abalone)}
+.kv small{font-size:13px;color:var(--ink-soft)}
+.about-vis{height:420px;border-radius:20px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;color:var(--white);
+  background:linear-gradient(160deg,#2a4a5a,#16323f);
+  box-shadow:var(--shadow);position:relative;overflow:hidden}
+.about-vis::before{content:"";position:absolute;width:320px;height:320px;border-radius:50%;
+  border:2px solid rgba(200,162,74,.25);top:-60px;right:-60px}
+.about-vis::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.08);bottom:-40px;left:-40px}
+.about-vis .big{font-size:120px;position:relative;z-index:2;filter:drop-shadow(0 8px 20px rgba(0,0,0,.2))}
+.about-vis h3{position:relative;z-index:2;font-size:26px;margin-top:10px}
+.about-vis p{position:relative;z-index:2;color:var(--gold-soft);font-size:14px;margin-top:6px}
+
+/* ============ 做法步骤 ============ */
+.steps{display:grid;gap:20px}
+.step{display:flex;gap:22px;background:var(--white);padding:26px;border-radius:14px;
+  box-shadow:var(--shadow);align-items:flex-start}
+.step .n{flex:none;width:46px;height:46px;border-radius:50%;background:var(--abalone);
+  color:var(--gold);display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:800}
+.step h3{font-size:18px;color:var(--abalone-deep);margin-bottom:6px}
+.step p{font-size:14px;color:var(--ink-soft)}
+
+/* ============ FAQ ============ */
+.faq-item{background:var(--white);border-radius:12px;margin-bottom:12px;
+  box-shadow:var(--shadow);overflow:hidden}
+.faq-q{padding:20px 24px;font-size:16px;font-weight:600;color:var(--abalone-deep);
+  cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-q::after{content:"+";color:var(--gold);font-size:24px;flex:none}
+.faq-item.open .faq-q::after{content:"−"}
+.faq-a{max-height:0;overflow:hidden;transition:.3s;color:var(--ink-soft);font-size:15px}
+.faq-a-inner{padding:0 24px 22px}
+.faq-item.open .faq-a{max-height:300px}
+
+/* ============ 联系 ============ */
+.contact{background:var(--abalone-deep);color:var(--white)}
+.contact .sec-h h2{color:var(--white)}
+.contact .sec-h p{color:rgba(255,255,255,.7)}
+.contact-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+  border-radius:20px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:50px;
+  backdrop-filter:blur(6px)}
+.c-info h3{font-size:24px;margin-bottom:22px}
+.c-info dl{display:grid;gap:18px}
+.c-info dt{font-size:13px;letter-spacing:2px;color:var(--gold);margin-bottom:2px}
+.c-info dd{font-size:16px}
+.c-form{display:grid;gap:16px}
+.c-form input,.c-form textarea{width:100%;padding:14px 18px;border-radius:10px;
+  border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);
+  color:var(--white);font-size:15px;font-family:inherit}
+.c-form input::placeholder,.c-form textarea::placeholder{color:rgba(255,255,255,.5)}
+.c-form textarea{min-height:120px;resize:vertical}
+.c-form button{justify-self:start;cursor:pointer;border:none}
+
+/* ============ 页脚 ============ */
+.ft{background:#0f252f;color:rgba(255,255,255,.6);padding:48px 0 28px;font-size:14px}
+.ft-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.ft-brand h3{color:var(--white);font-size:20px;margin-bottom:12px}
+.ft-brand p{max-width:300px}
+.ft h4{color:var(--gold);font-size:15px;margin-bottom:14px}
+.ft ul{display:grid;gap:9px}
+.ft a{color:rgba(255,255,255,.6)}
+.ft a:hover{color:var(--gold)}
+.ft-bot{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;
+  justify-content:space-between;flex-wrap:wrap;gap:14px}
+.ft-bot a{margin-left:20px}
+
+/* ============ 回到顶部 ============ */
+.top{position:fixed;right:20px;bottom:24px;width:46px;height:46px;border-radius:50%;
+  background:var(--abalone);color:var(--white);display:none;align-items:center;
+  justify-content:center;font-size:20px;cursor:pointer;z-index:99;
+  box-shadow:0 6px 20px rgba(26,35,50,.25);transition:.2s}
+.top.show{display:flex}
+.top:hover{background:var(--gold);color:#2a2010}
+
+/* ============ 移动端 ============ */
+@media(max-width:900px){
+  section{padding:54px 0}
+  .grid-4,.grid-3{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.contact-box{grid-template-columns:1fr;gap:36px}
+  .about-vis{height:300px}
+  .ft-top{grid-template-columns:1fr 1fr;gap:28px}
+  .h-title{font-size:34px}
+  .sec-h h2{font-size:26px}
+}
+@media(max-width:640px){
+  .wrap{padding:0 16px}
+  .nav{height:58px}
+  .menu{position:fixed;top:58px;left:0;right:0;flex-direction:column;gap:0;
+    background:var(--white);padding:12px 0 20px;border-bottom:1px solid var(--line);
+    transform:translateY(-140%);transition:.3s;box-shadow:0 12px 30px rgba(0,0,0,.08)}
+  .menu.open{transform:translateY(0)}
+  .menu a{padding:14px 24px;font-size:16px}
+  .menu a::after{display:none}
+  .cta{margin:6px 24px}
+  .burger{display:flex}
+  .h-title{font-size:29px}
+  .h-sub{font-size:15px}
+  .btn{padding:12px 24px;font-size:14px}
+  .h-stats{gap:26px;margin-top:40px}
+  .h-stat b{font-size:26px}
+  .grid-4,.grid-3,.grid-2,.kv,.ft-top{grid-template-columns:1fr}
+  .step{flex-direction:column;gap:14px}
+  .contact-box{padding:28px 20px}
+  .sec-h{margin-bottom:34px}
+  .ft-top{margin-bottom:26px}
+  .ft-bot{font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= 页头 ================= -->
+<header class="hd">
+  <div class="wrap nav">
+    <a href="#" class="logo">🐚 粉鲍鱼<span>.</span></a>
+    <nav class="menu" id="menu">
+      <a href="#home">首页</a>
+      <a href="#products">鲍鱼品种</a>
+      <a href="#guide">选购指南</a>
+      <a href="#recipe">鲍鱼做法</a>
+      <a href="#faq">常见问题</a>
+      <a href="#contact" class="cta">立即咨询</a>
+    </nav>
+    <div class="burger" id="burger"><i></i><i></i><i></i></div>
+  </div>
+</header>
+
+<!-- ================= Hero ================= -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <span class="h-eyebrow">深海 · 直采 · 当日发</span>
+    <h1 class="h-title">每一只粉鲍鱼，<em>都值得被认真对待</em></h1>
+    <p class="h-sub">粉鲍鱼专注高品质鲍鱼直供，从鲜活鲍鱼到陈年干鲍，从家常餐桌到高端礼盒，我们只做懂鲍鱼的人想要的那一口鲜。</p>
+    <div class="h-btns">
+      <a href="#products" class="btn btn-gold">浏览鲍鱼品种 →</a>
+      <a href="#guide" class="btn btn-ghost">新手选购指南</a>
+    </div>
+    <div class="h-stats">
+      <div class="h-stat"><b>12+</b><small>鲍鱼产区直采</small></div>
+      <div class="h-stat"><b>48H</b><small>捕捞到发货</small></div>
+      <div class="h-stat"><b>0</b><small>化学泡发 · 纯天然</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目一：粉鲍鱼品种 ================= -->
+<section id="products">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="tag">PRODUCTS</span>
+      <h2>粉鲍鱼品种 · 一图看懂怎么选</h2>
+      <p>从野生粉鲍鱼到养殖鲜鲍，不同品种、不同规格、不同吃法，选对了才是真省钱。</p>
+    </div>
+    <div class="grid grid-3">
+
+      <article class="card">
+        <div class="thumb t-1">🐚</div>
+        <div class="card-body">
+          <h3>野生粉鲍鱼</h3>
+          <p>深海礁岩慢养，肉质紧实弹牙，甘鲜回甜。高端宴席与礼赠首选。</p>
+          <div class="card-foot">
+            <span class="price">产地直采<b>¥ 268 / 只起</b></span>
+            <a href="#" class="more">查看详情 ›</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb t-2">🍖</div>
+        <div class="card-body">
+          <h3>干鲍 · 溏心鲍鱼</h3>
+          <p>古法晾晒陈化，溏心软糯、胶感十足，是懂行人最爱的"软黄金"。</p>
+          <div class="card-foot">
+            <span class="price">陈年干鲍<b>¥ 680 / 只起</b></span>
+            <a href="#" class="more">查看详情 ›</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb t-3">🥬</div>
+        <div class="card-body">
+          <h3>鲜活粉鲍鱼</h3>
+          <p>海水活养、顺丰冷链，到手仍鲜活跳动，家庭日常食用性价比之选。</p>
+          <div class="card-foot">
+            <span class="price">10 头规格<b>¥ 12.8 / 只起</b></span>
+            <a href="#" class="more">查看详情 ›</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb t-4">🎁</div>
+        <div class="card-body">
+          <h3>粉鲍鱼礼盒</h3>
+          <p>干鲍、鲜鲍、鲍鱼罐头自由组合，高端包装，节日礼赠有面子。</p>
+          <div class="card-foot">
+            <span class="price">礼盒装<b>¥ 388 / 盒起</b></span>
+            <a href="#" class="more">查看详情 ›</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb t-5">🥫</div>
+        <div class="card-body">
+          <h3>粉鲍鱼罐头</h3>
+          <p>开罐即食，佐粥拌面、快手下菜，囤在家里随时加一道硬菜。</p>
+          <div class="card-foot">
+            <span class="price">即食罐头<b>¥ 45 / 罐起</b></span>
+            <a href="#" class="more">查看详情 ›</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb t-6">🦪</div>
+        <div class="card-body">
+          <h3>粉鲍鱼边角料</h3>
+          <p>鲍鱼肝、鲍鱼裙边等，煲汤熬粥鲜味浓缩，懂吃的老饕才找得到。</p>
+          <div class="card-foot">
+            <span class="price">煲汤食材<b>¥ 38 / 份起</b></span>
+            <a href="#" class="more">查看详情 ›</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目二：为什么选我们 ================= -->
+<section class="features" id="why">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="tag">WHY US</span>
+      <h2>买粉鲍鱼，最怕踩的三个坑</h2>
+      <p>粉鲍鱼水深，我们从源头把每一只都交代清楚。</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="feat"><span class="ic">🌊</span><h3>产地可溯源</h3><p>每一批鲍鱼标明产区、规格、捕捞日期，拒绝以次充好。</p></div>
+      <div class="feat"><span class="ic">🚚</span><h3>冷链直达</h3><p>顺丰空运 + 保温箱 + 冰袋，48 小时内从海到桌。</p></div>
+      <div class="feat"><span class="ic">🧪</span><h3>拒绝化学泡发</h3><p>零泡药、零注水，干鲍纯天然晾晒，吃得放心。</p></div>
+      <div class="feat"><span class="ic">💬</span><h3>一对一顾问</h3><p>选规格、教泡发、教做法，资深鲍鱼师傅全程在线答疑。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目三：关于 ================= -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-txt">
+        <div class="sec-h" style="text-align:left;margin-bottom:24px">
+          <span class="tag">ABOUT</span>
+          <h2 style="margin-top:8px">我们和鲍鱼打了十几年交道</h2>
+        </div>
+        <p>粉鲍鱼团队扎根沿海产区十余年，从最开始只是帮家人挑几只鲍鱼，到如今服务数万家庭餐桌。我们不懂花哨营销，只懂哪片海域的鲍鱼最肥、哪个季节的干鲍最香。</p>
+        <p>我们不卖最便宜的鲍鱼，只卖让你觉得"值"的那一只。</p>
+        <div class="kv">
+          <div><b>15年</b><small>产区深耕经验</small></div>
+          <div><b>3万+</b><small>家庭长期复购</small></div>
+          <div><b>100%</b><small>产地直采 · 拒绝中间商</small></div>
+          <div><b>7×12h</b><small>选购与做法在线答疑</small></div>
+        </div>
+      </div>
+      <div class="about-vis">
+        <span class="big">🐚</span>
+        <h3>鲜 · 从海到桌</h3>
+        <p>懂鲍鱼，更懂你的餐桌</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目四：选购指南 ================= -->
+<section id="guide">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="tag">BUYING GUIDE</span>
+      <h2>新手选购鲍鱼，记住这 5 条</h2>
+      <p>看完这一段，你挑鲍鱼就不会再被忽悠了。</p>
+    </div>
+    <div class="steps">
+
+      <div class="step">
+        <div class="n">1</div>
+        <div>
+          <h3>看头数：头数越少越贵</h3>
+          <p>粉鲍鱼按"头"计价，即每司马斤（约 600g）有多少只。"3 头鲍"比"10 头鲍"个头大得多，价格也差出几倍。家用 8–10 头性价比最高。</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="n">2</div>
+        <div>
+          <h3>看产地：日鲍、南非鲍、国产鲍各有千秋</h3>
+          <p>日本网鲍、吉品鲍、禾麻鲍是干鲍天花板；南非鲍性价比高；大连、福建鲍鱼则是鲜鲍主流，鲜活度优先看产地就近。</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="n">3</div>
+        <div>
+          <h3>看干度：干鲍要够干、够硬</h3>
+          <p>优质干鲍手感坚硬、表面有白霜（盐霜与氨基酸析出），摇起来有清脆声响。发软、有异味的基本是受潮或泡过水。</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="n">4</div>
+        <div>
+          <h3>看溏心：陈年干鲍才有</h3>
+          <p>溏心是干鲍陈化后中心形成的软糯胶质层，是顶级干鲍的标志。年份越久溏心越明显，但也越需要耐心泡发。</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="n">5</div>
+        <div>
+          <h3>鲜鲍看活力，不看个头</h3>
+          <p>鲜活粉鲍鱼要选肉足饱满、吸附力强、触碰会收缩的。死鲍、异味鲍果断不要，鲍鱼死后极易产生组胺。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目五：鲍鱼做法 ================= -->
+<section id="recipe" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="tag">RECIPE</span>
+      <h2>粉鲍鱼家常做法 · 三道经典</h2>
+      <p>从快手到功夫菜，照着做就能上桌。</p>
+    </div>
+    <div class="grid grid-3">
+
+      <article class="card">
+        <div class="thumb t-1">🍲</div>
+        <div class="card-body">
+          <h3>清蒸鲍鱼</h3>
+          <p>最考验鲍鱼本味。鲍鱼刷净去内脏，面上铺蒜蓉粉丝，大火蒸 5–6 分钟，出锅淋热油、生抽，鲜到掉眉毛。</p>
+          <div class="card-foot">
+            <span class="price">难度<b>★☆☆</b></span>
+            <span class="more">约 15 分钟</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb t-2">🥘</div>
+        <div class="card-body">
+          <h3>粉鲍鱼红烧肉</h3>
+          <p>五花肉煸出油，下冰糖炒色，加生抽老抽与黄酒，放入鲍鱼小火慢炖 90 分钟，胶质浓稠挂汁，宴客硬菜。</p>
+          <div class="card-foot">
+            <span class="price">难度<b>★★☆</b></span>
+            <span class="more">约 2 小时</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb t-3">🍚</div>
+        <div class="card-body">
+          <h3>粉鲍鱼捞饭</h3>
+          <p>粉鲍鱼高汤收汁，淋在热米饭上，再加一颗溏心蛋。家里也能做出酒楼级味道，是孩子最爱的吃法。</p>
+          <div class="card-foot">
+            <span class="price">难度<b>★☆☆</b></span>
+            <span class="more">约 30 分钟</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= 栏目六：常见问题 ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="tag">FAQ</span>
+      <h2>关于粉鲍鱼，大家最常问的</h2>
+      <p>没找到答案？直接翻到底部联系我们，师傅一对一解答。</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">干鲍鱼要泡发多久？</div>
+      <div class="faq-a"><div class="faq-a-inner">视年份与个头而定。一般需先用清水浸泡 12–24 小时至回软，再用温水（约 60℃）焗 2–3 轮，每轮 6–8 小时，全程约 3–4 天。陈年大鲍鱼建议 5 天以上。我们随单附泡发手册，也可直接咨询师傅。</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">鲜活鲍鱼到手怎么保存？</div>
+      <div class="faq-a"><div class="faq-a-inner">最理想是当日食用。需短期保存请放入保鲜盒加少量海水或淡盐水，冷藏 2–4℃，可活养 2–3 天，期间勤换水。切勿淡水浸泡，会让鲍鱼失味死亡。</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">鲍鱼越大越好吃吗？</div>
+      <div class="faq-a"><div class="faq-a-inner">不一定。个头大意味着胶质更足、适合慢炖，但鲜味浓度未必更高。家常清蒸反而是中等规格（8–12 头）口感最佳，肉嫩而不柴。</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">干鲍和鲜鲍怎么选？</div>
+      <div class="faq-a"><div class="faq-a-inner">追求极致鲜味与仪式感、做宴席大菜选干鲍；日常快手、清蒸、煲汤选鲜鲍。干鲍需要泡发和慢炖，时间成本高但风味层次更丰富。</div></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">鲍鱼有季节吗？什么时候买最肥？</div>
+      <div class="faq-a"><div class="faq-a-inner">鲍鱼有"春汤秋鲍"之说。秋季（9–11 月）鲍鱼为过冬囤积养分，肉质最肥厚、最甘甜，是全年最佳食用与采购季节。冬季肉质偏紧，夏季则偏瘦。</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 栏目七：联系 ================= -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="tag" style="color:var(--gold)">CONTACT</span>
+      <h2>找我们聊鲍鱼</h2>
+      <p>选规格、问做法、要报价，都可以。工作日 12 小时内回复。</p>
+    </div>
+    <div class="contact-box">
+
+      <div class="c-info">
+        <h3>联系方式</h3>
+        <dl>
+          <div><dt>客服微信</dt><dd>heibaoyu_88</dd></div>
+          <div><dt>联系电话</dt><dd>400-888-0000</dd></div>
+          <div><dt>服务时间</dt><dd>每天 9:00 – 21:00</dd></div>
+          <div><dt>发货地</dt><dd>福建 · 厦门 / 大连</dd></div>
+        </dl>
+      </div>
+
+      <form class="c-form" onsubmit="event.preventDefault();alert('提交成功！我们会尽快联系您。');">
+        <input type="text" placeholder="您的称呼" required>
+        <input type="tel" placeholder="联系电话 / 微信" required>
+        <textarea placeholder="想了解的鲍鱼品种、规格或吃法，写在这里…" required></textarea>
+        <button type="submit" class="btn btn-gold">提交咨询 →</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= 页脚 ================= -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <h3>🐚 粉鲍鱼</h3>
+        <p>专注高品质鲍鱼直供，产地可溯源、拒绝化学泡发。懂鲍鱼，更懂你的餐桌。</p>
+      </div>
+      <div>
+        <h4>鲍鱼品种</h4>
+        <ul>
+          <li><a href="#">野生粉鲍鱼</a></li>
+          <li><a href="#">干鲍 · 溏心鲍</a></li>
+          <li><a href="#">鲜活鲍鱼</a></li>
+          <li><a href="#">鲍鱼礼盒</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>选购帮助</h4>
+        <ul>
+          <li><a href="#guide">选购指南</a></li>
+          <li><a href="#recipe">家常做法</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#">泡发手册</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#about">品牌故事</a></li>
+          <li><a href="#contact">联系我们</a></li>
+          <li><a href="#">配送说明</a></li>
+          <li><a href="#">售后政策</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 粉鲍鱼 · 高品质鲍鱼直供平台　|　网站：<a href="https://fenbaoyu-top.github.io">fenbaoyu-top.github.io</a></span>
+      <span><a href="#">隐私政策</a><a href="#">使用条款</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="top" id="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<script>
+// 移动端菜单
+var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',function(){menu.classList.toggle('open')});
+menu.addEventListener('click',function(e){if(e.target.tagName==='A')menu.classList.remove('open')});
+
+// FAQ 折叠
+document.querySelectorAll('.faq-q').forEach(function(q){
+  q.addEventListener('click',function(){q.parentElement.classList.toggle('open')});
+});
+
+// 回到顶部按钮
+window.addEventListener('scroll',function(){
+  document.getElementById('top').classList.toggle('show',window.scrollY>400);
+});
+</script>
+
+</body>
+</html>
